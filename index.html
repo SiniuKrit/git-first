@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon/favicon.png">
+    <title>Название</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.validationEngine.min.js" type="text/javascript"></script>
+    <script src="js/jquery.validationEngine-ru.min.js" type="text/javascript"></script>
+    <script src="js/jquery.formstyler.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+    <!--[if lt IE 10]>
+    <script src="js/jquery.placeholder.min.js" type="text/javascript"></script>
+    <script src="js/ie9.js" type="text/javascript"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <script src="js/html5shiv.min.js" type="text/javascript"></script>
+    <script src="js/respond.min.js" type="text/javascript"></script>
+    <script src="js/selectivizr-min.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+
+    </div>
+
+        <!-- Modal Callback -->
+
+    <div id="modalCallback" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">Перезвоните мне</div>
+				<div class="modal-body">
+                    <form action="" method="post" name="callback" class="loadForm">
+                        <input type="text" name="fio" class="validate[required]" placeholder="Ваше ФИО">
+                        <input type="text" name="tel" class="validate[required] mask_tel_ua" placeholder="Ваш номер телефона">
+                        <input type="hidden" name="send" value="ok">
+                        <input type="submit" value="Отправить заявку">
+                    </form>
+                    <div class="closeModalCon">
+                        <a aria-hidden="true" data-dismiss="modal" href="#">Закрыть</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+        <!-- Modal Order -->
+
+    <div id="modalOrder" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">Быстрый заказ</div>
+				<div class="modal-body">
+                    <form action="" method="post" name="order" class="loadForm">
+                        <div class="selectProd">
+                            <select>
+                                <option value="1">Парник «Урожай» 4м</option>
+                                <option value="2">Парник «Урожай» 6м</option>
+                                <option value="3">Парник «Урожай» 8м</option>
+                            </select>
+                        </div>
+                        <input class="validate[required]" type="text" name="fio" placeholder="Ваше ФИО">
+                        <input class="validate[required] mask_tel_ua" type="text" name="tel" placeholder="Ваш номер телефона">
+                        <input type="hidden" name="city" value="" class="ymaps_city">
+                        <input type="hidden" name="send" value="ok">
+                        <input type="submit" value="Заказать">
+                    </form>
+                    <div class="closeModalCon">
+                        <a aria-hidden="true" data-dismiss="modal" href="#">Закрыть</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <script src="js/maskedinput.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
+</body>
+</html>
